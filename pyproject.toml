@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "universal-print-toolkit"
+version = "0.1.0"
+description = "Universal Print Toolkit (UPT) - Cross-platform tool to discover, install, configure, and use any printer or driver across Windows, Linux, and macOS."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "zeroconf>=0.132.0",
+    "pillow>=10.0.0",
+    "pydantic>=2.0.0",
+    "fastapi>=0.100.0",
+    "uvicorn>=0.22.0",
+    "requests>=2.28.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
+
+[project.scripts]
+upt = "universal_printer.cli:app"
+universal-print = "universal_printer.cli:app"
+uprint = "universal_printer.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["src"]

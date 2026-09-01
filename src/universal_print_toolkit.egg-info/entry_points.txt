@@ -1,0 +1,4 @@
+[console_scripts]
+universal-print = universal_printer.cli:app
+uprint = universal_printer.cli:app
+upt = universal_printer.cli:app
