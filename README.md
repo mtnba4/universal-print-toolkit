@@ -1,4 +1,4 @@
-﻿# Universal Print Toolkit (UPT) 🖨️
+# Universal Print Toolkit (UPT) 🖨️
 
 > The cross-platform, driverless printing engine and management toolkit for **Windows**, **Linux**, and **macOS**.
 
@@ -32,10 +32,12 @@
 ### Installation
 
 ```bash
-git clone https://github.com/your-username/universal-print-toolkit.git
+git clone https://github.com/mtnba4/universal-print-toolkit.git
 cd universal-print-toolkit
-pip install -e .
+python -m pip install -e .
 ```
+
+> **Tip:** You can run commands using `upt <command>` or `python -m universal_printer.cli <command>`.
 
 ---
 

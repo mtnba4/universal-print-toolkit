@@ -4,6 +4,7 @@ Version: 0.1.0
 Summary: Universal Print Toolkit (UPT) - Cross-platform tool to discover, install, configure, and use any printer or driver across Windows, Linux, and macOS.
 Requires-Python: >=3.9
 Description-Content-Type: text/markdown
+License-File: LICENSE
 Requires-Dist: typer>=0.9.0
 Requires-Dist: rich>=13.0.0
 Requires-Dist: zeroconf>=0.132.0
@@ -14,10 +15,22 @@ Requires-Dist: uvicorn>=0.22.0
 Requires-Dist: requests>=2.28.0
 Provides-Extra: dev
 Requires-Dist: pytest>=7.0.0; extra == "dev"
+Dynamic: license-file
 
 ﻿# Universal Print Toolkit (UPT) 🖨️
 
 > The cross-platform, driverless printing engine and management toolkit for **Windows**, **Linux**, and **macOS**.
+
+---
+
+> [!WARNING]
+> ### 🧪 Experimental / Vibecoded Project — Testers & Feedback Needed!
+> **Full Transparency:** This project was largely **vibecoded with AI** as an ambitious experiment to unify cross-platform printer discovery, driverless IPP, OS spooler bridges, and document rasterization into a single clean toolkit.
+> 
+> Because printer hardware, vendor firmwares, network spoolers, and OS printing architectures (Windows Print Spooler vs. CUPS) are notoriously diverse and quirky in the real world:
+> - **We need testers!** If you have physical printers (HP, Epson, Brother, Canon, thermal receipt POS, network lasers, or USB setups), please test this tool on Windows, Linux, and macOS.
+> - **Report quirks & bugs:** Open an issue or submit a PR with your printer model, OS version, and any logs or strange behavior you encounter.
+> - **Feedback & contributions are warmly welcome!** 🤝
 
 ---
 
@@ -81,3 +94,11 @@ upt print "ipp://192.168.1.50/ipp/print" invoice.pdf --direct
 upt web --port 8000
 ```
 Open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser.
+
+---
+
+## 🤝 Contributing & Testing
+
+1. Clone the repo.
+2. Test against your local physical and network printers.
+3. Share your findings or create a PR to expand support for specific quirks or obscure PDL protocols!
